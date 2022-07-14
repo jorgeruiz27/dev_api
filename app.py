@@ -4,8 +4,8 @@ import json
 app = Flask(__name__)
 
 desenvolvedores = [
-    {'id':0,'nome':'Jorge','habilidades':['Python', 'Flask']},
-    {'id':1,'nome':'Luiz','habilidades':['Python', 'Django']}
+    {'id':0,'nome':'Jorge','habilidades.py':['Python', 'Flask']},
+    {'id':1,'nome':'Luiz','habilidades.py':['Python', 'Django']}
 ]
 
 @app.route('/dev/<int:id>/', methods=['GET', 'PUT', 'DELETE'])
